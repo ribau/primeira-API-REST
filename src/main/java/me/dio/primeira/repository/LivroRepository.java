@@ -1,14 +1,7 @@
 package me.dio.primeira.repository;
-import me.dio.primeira.Livro;
+
+import me.dio.primeira.model.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-
-public class LivroRepository extends JpaRepository<Livro, Long> {
-    
-
-
-
-
-
-
+public interface LivroRepository extends JpaRepository<Livro, Long> {
 }

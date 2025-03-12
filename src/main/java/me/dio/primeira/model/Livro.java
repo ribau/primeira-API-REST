@@ -2,9 +2,8 @@ package me.dio.primeira.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 
@@ -21,7 +20,7 @@ public class Livro {
     }
 
     public void setId(Long id) {
-
+        this.id = id;
     }
 
     public String getTitulo() {
