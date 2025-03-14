@@ -1,19 +1,13 @@
-package me.dio.primeira.model;
+package me.dio.primeira.controller.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 
-@Entity
-
-public class Livro {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class LivroDto {
     private Long id;
     private String titulo;
-    private String autor;
     private String isbn;
+    private Long autorId;
+
+    
 
     public Long getId() {
         return id;
@@ -31,14 +25,6 @@ public class Livro {
         this.titulo = titulo;
     }
 
-    public String getAutor() {
-        return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
     public String getIsbn() {
         return isbn;
     }
@@ -47,4 +33,11 @@ public class Livro {
         this.isbn = isbn;
     }
 
+    public Long getAutorId() {
+        return autorId;
+    }
+
+    public void setAutorId(Long autorId) {
+        this.autorId = autorId;
+    }
 }
